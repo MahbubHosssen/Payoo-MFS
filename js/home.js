@@ -1,5 +1,5 @@
 document.getElementById("log-out-btn").addEventListener("click", function(){
-    window.location.href = "/index.html"
+    window.location.href = "index.html"
 })
 // Add Money
 document.getElementById("add-money-btn").addEventListener("click", function(){
@@ -32,11 +32,6 @@ document.getElementById("add-money-btn2").addEventListener("click", function(eve
         document.getElementById("account-balance").innerText = total;
     }
 })
-
-
-// const total = balance + addMoneyAmount;
-// document.getElementById("account-balance").innerText = total;
-
 
 // Cash Out
 document.getElementById("cash-out-btn").addEventListener("click", function(){
