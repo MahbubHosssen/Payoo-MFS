@@ -19,10 +19,10 @@
             <div class="camera"></div>
                 <div class="display">
                     <div class="artboard artboard-demo phone-2">
-                        <div class="flex justify-between gap-14 items-center border-b">
+                        <div class="flex justify-between gap-14 items-center">
                             <div class="stats shadow">
                                 <div class="stat">
-                                <div class="stat-value">89,400</div>
+                                <div class="stat-value" id="account-balance">89400</div>
                                 <div class="stat-desc">Available balance</div>
                                 </div>
                             </div>
@@ -31,11 +31,12 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div>
+                        <div class="">
                             <button id="add-money-btn" class="btn btn-outline">Add Money</button>
                             <button id="cash-out-btn" class="btn btn-outline">cash Out</button>
                         </div>
-                        <div id="add-money-container" class="hidden hero bg-base-200 ">
+                        <div class="divider"></div>
+                        <div id="add-money-show-container" class="hidden hero bg-base-200 ">
                             <div class="hero-content">
                               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                                 <form class="card-body">
@@ -43,19 +44,19 @@
                                     <label class="label">
                                       <span class="label-text">Amount</span>
                                     </label>
-                                    <input type="text" placeholder="Amount" class="input input-bordered" required />
+                                    <input id="add-money-amount" type="text" placeholder="Amount" class="input input-bordered" required />
                                   </div>
                                   <div class="form-control">
                                     <label class="label">
                                       <span class="label-text">Pin</span>
                                     </label>
-                                    <input type="password" placeholder="Pin Number" class="input input-bordered" required />
+                                    <input id="pin" type="password" placeholder="Pin Number" class="input input-bordered" required />
                                     <label class="label">
                                       <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                     </label>
                                   </div>
                                   <div class="form-control mt-6">
-                                    <button class="btn btn-primary">Add Money</button>
+                                    <button id="add-money-btn2" class="btn btn-primary">Add Money</button>
                                   </div>
                                 </form>
                               </div>
@@ -64,7 +65,7 @@
 
                         <!-- cashout container -->
 
-                        <div id="cashout-money-container" class="hidden hero bg-base-200 ">
+                        <div id="cashout-show-container" class="hidden hero bg-base-200 ">
                           <div class="hero-content">
                             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                               <form class="card-body">
